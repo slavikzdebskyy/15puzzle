@@ -1,0 +1,15 @@
+<div class="container">
+	<div class="game">
+		<div class="square"  *ngFor="let el of fiveteen">
+			<div class="in" (click)=move(el.arg) *ngIf="visible">
+				<p>{{el.value}}</p>
+			</div>
+		</div>
+	</div>
+	<div class="controls">
+		<button (click)="startGame()">{{buttonName}}</button>
+		<p>Moves:  {{moves}}</p>
+		<!-- <p>Time:  {{time}}s</p> -->
+	</div>
+</div>
+
